@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title Goes Here!</title>
+    <link rel="stylesheet" href="../Static/CSS/Landing Page/styles.css">
+    <link rel="stylesheet" href="../Static/CSS/Main Page/stylesDiv.css">
+</head>
+<body>
+    <header class="header">
+        <div class="nav-font" id="nav-bar-stakker">
+            <div class="padding-main primary-flex border-bottom">
+                <div class="float-50">
+                    <img class="margin-left nav-image" src="../Static/Static Images/indianRailwaysLogo.png" alt="">
+                </div>
+                <div class="primary-flex float-50 align-center justify-end">
+                    <button class="padding-btn font-rem back-transparent-border-none" onclick="showModal()">Travel With Viator</button>
+                </div>
+            </div>
+            <div class="bottom-bor">
+                <ul class="margin-left padding-main primary-flex list-no-style low-cap-font">
+                    <li class="mar-right align-center primary-flex"><ion-icon class="transfrom-half margin-right-low" name="grid-outline"></ion-icon>Top activities</li>
+                    <li class="mar-right align-center primary-flex"><ion-icon class="transfrom-half margin-right-low" name="pin-outline"></ion-icon>Top landmarks</li>
+                    <li class="mar-right align-center primary-flex"><ion-icon class="transfrom-half margin-right-low" name="globe-outline"></ion-icon>Explore the world</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="trainSelection primary-flex justify-center margin-main padding-main align-center">
+            <input id="boardingStation" type="text" placeholder="Boarding Station" class="input-train">
+            <ion-icon class="primary-flex align-center font-icon"  name="code-outline"></ion-icon>
+            <input id="destinationStation" type="text" placeholder="Destination Station" class="input-train">
+            <button class="width-content search-btn" onclick="fetchRailData()">Search</button>
+        </div>
+        <div>
+            <!-- <div class="trainDataWrapper primary-grid justify-center padding-main">
+                <div class="trainDataDiv primary-flex align-center border-bottom margin-main">
+                    <div class="name-number float-50 nav-font-large mar-right-high">
+                        <div class="img-data-wrapper primary-flex width-content">
+                            <img src="../Static/Static Images/Viator-Logo-V.jpg" alt="" class="image-logo mar-right">
+                            <div class="data-train">
+                                <p class="theme-color">TRAIN NAME</p>
+                                <p class="station-color">FROM STATION</p>
+                                <p class="date-color">FROM DATE</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="name-number float-50 low-cap-font font-size-big primary-grid justify-end">
+                        <p class="theme-color"> </p>
+                        <p class="station-color primary-flex justify-end">TO STATION</p>
+                        <p class="date-color">TO DATE</p>
+                    </div>
+                </div>
+                <div class="Book-NOW">
+                    <div class="add-subtract float-33 justify-left primary-flex">
+                        <button class="BOOK subtract">-1</button>
+                        <button class="BOOK add">+1</button>
+                    </div>
+                    <button class="BOOK float-33 justify-center">BOOK NOW!</button>
+                    <div class="available float-33 justify-end primary-flex align-center">
+                        100 Tickets Available
+                    </div>
+                </div>
+            </div>             -->
+        </div>
+    </main>
+</body>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    script(src="../Static/JS/Main Page/script.mjs") 
+</html>

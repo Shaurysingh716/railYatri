@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Counter Example</title>
+</head>
+<body>
+  <h1>Counter</h1>
+
+  <p>Available: <span id="availableCount"></span></p>
+  <p>Count: <span id="count"></span></p>
+
+  <script>
+    // Initialize the count and availableCount
+    let count = 0;
+    let availableCount = 100;
+
+    // Create the Available Count element and add it to the DOM
+    const availableCountElement = document.createElement('span');
+    availableCountElement.id = 'availableCount';
+    availableCountElement.textContent = availableCount;
+    document.querySelector('p:nth-of-type(1)').appendChild(availableCountElement);
+
+    // Create the Count element and add it to the DOM
+    const countElement = document.createElement('span');
+    countElement.id = 'count';
+    countElement.textContent = count;
+    document.querySelector('p:nth-of-type(2)').appendChild(countElement);
+
+    // Create the +1 button element and add it to the DOM
+    const incrementButton = document.createElement('button');
+    incrementButton.id = 'incrementButton';
+    incrementButton.textContent = '+1';
+    document.body.appendChild(incrementButton);
+
+    // Create the -1 button element and add it to the DOM
+    const decrementButton = document.createElement('button');
+    decrementButton.id = 'decrementButton';
+    decrementButton.textContent = '-1';
+    document.body.appendChild(decrementButton);
+
+    // Update the displayed available count
+    function updateAvailableCount() {
+      availableCountElement.textContent = availableCount;
+    }
+
+    // Update the displayed count
+    function updateCount() {
+      countElement.textContent = count;
+    }
+
+    // Function to handle the +1 button click
+    incrementButton.addEventListener('click', function() {
+      if (count < availableCount) {
+        count++;
+        updateCount();
+        availableCount--;
+        updateAvailableCount();
+      }
+    });
+
+    // Function to handle the -1 button click
+    decrementButton.addEventListener('click', function() {
+      if (count > 0) {
+        count--;
+        updateCount();
+        availableCount++;
+        updateAvailableCount();
+      }
+    });
+  </script>
+</body>
+</html>

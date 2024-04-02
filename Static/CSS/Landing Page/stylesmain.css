@@ -1,0 +1,11 @@
+.data-image-main{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    transition: opacity 1.5s ease-in-out;
+    object-fit: cover;
+    opacity: 0;
+}

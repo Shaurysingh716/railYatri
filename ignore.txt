@@ -1,0 +1,25 @@
+            <!-- //- form(action="/train", method="POST")
+            //-     label(for="boardingStation")
+            //-     input(type="text", name="boardingStation", id="boardingStation").input-train
+            //-     label(for="destinationStation")
+            //-     input(type="text", name="destinationStation", id="destinationStation").input-train
+            //-     input(type="submit", value="Submit").width-content.search-btn
+        </div>
+        <div class="trainDataWrapper primary-grid justify-center padding-main">
+            each index in [0,1,2,3,4,5,6,7,8,9,10]
+                div.trainDataDiv.primary-flex.align-center.border-bottom.margin-main
+                    div.name-number.float-50.nav-font-large.mar-right-high
+                        div.img-data-wrapper.primary-flex.width-content
+                            img(src="../Static/Static Images/Viator-Logo-V.jpg", alt="").image-logo.mar-right
+                            div.data-train
+                                p.theme-color= DataArray[index]
+                                p.station-color= fromStationName[index]
+                                p.date-color= toTimeArray[index]
+                    div.name-number.float-50.low-cap-font.font-size-big.primary-grid.justify-end
+                        p.theme-color= " "
+                        p.station-color.primary-flex.justify-end= toStationName[index]
+                        p.date-color= fromTimeArray[index]-->
+
+
+
+`https://indian-railway-api.cyclic.app/trains/betweenStations/?from=${boardingStation}&to=${destinationStation}`

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title Goes Here!</title>
+    <link rel="stylesheet" href="../Static/CSS/Landing Page/styles.css">
+    <link rel="stylesheet" href="../Static/CSS/Checkout Page/stylesmain.css">
+</head>
+<body>
+    <header class="header">
+        <div class="nav-font" id="nav-bar-stakker">
+            <div class="padding-main primary-flex border-bottom">
+                <div class="float-50">
+                    <img class="margin-left nav-image" src="../Static/Static Images/indianRailwaysLogo.png" alt="">
+                </div>
+                <div class="primary-flex float-50 align-center justify-end">
+                    <button class="padding-btn font-rem back-transparent-border-none" onclick="showModal()">Travel With Viator</button>
+                </div>
+            </div>
+            <div class="bottom-bor">
+                <ul class="margin-left padding-main primary-flex list-no-style low-cap-font">
+                    <li class="mar-right align-center primary-flex"><ion-icon class="transfrom-half margin-right-low" name="grid-outline"></ion-icon>Top activities</li>
+                    <li class="mar-right align-center primary-flex"><ion-icon class="transfrom-half margin-right-low" name="pin-outline"></ion-icon>Top landmarks</li>
+                    <li class="mar-right align-center primary-flex"><ion-icon class="transfrom-half margin-right-low" name="globe-outline"></ion-icon>Explore the world</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <h1 class="font-rem underline justify-center primary-flex">Check-Out With Tickets!</h1>
+        //- <div class="train-details trainDataDiv">
+        //-     <div class="boardingDetails float-50 nav-font-large">
+        //-         <p class="trainName">Renigunta Express</p>
+        //-         <p class="boardingStation">NDLS</p>
+        //-         <p class="boardingDate">22 OCT | 9:20</p>
+        //-     </div>
+        //-     <div class="arrivalDetails float-50 justify-end primary-grid nav-font-large">
+        //-         <p class="trainNumber justify-end primary-flex">00762</p>
+        //-         <p class="arrivalStation justify-end primary-flex">BPL</p>
+        //-         <p class="arrivalDate justify-end primary-flex">23 OCT | 10:20</p>
+        //-     </div>
+        //- </div>
+        <form class="justify-center primary-grid" action="/:databaseCode" method="post">
+            <input name="Email" type="email" placeholder="Email-Adress" class="input">
+            <input name="Phone" type="number" placeholder="Phone Number" class="input">
+            <input name="Tickets" type="number" placeholder="No. Of Tickets" class="input">
+            <button type="submit" class="width-content justify-center primary-flex button">Submit Details</button>
+        </form>
+    </main>
+</body>
+    script(src="../Static/JS/Checkout Page/script.js")
+</html>

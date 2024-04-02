@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title Goes Here!</title>
+    <link rel="stylesheet" href="../Static/CSS/Landing Page/styles.css">
+    <link rel="stylesheet" href="../Static/CSS/Landing Page/stylesmain.css">
+    <link rel="stylesheet" href="../Static/CSS/Landing Page/modal.css">
+</head>
+<body>
+    <div class="sign-in-modal">
+        <span onclick="removeModal()">&times;</span>
+        <h2 class="form-heading">Welcome To RailYatri</h2>
+        <form class="input-form" id="post-form-user-credentials" method="POST" action="/">
+          <div class="username-input">
+            <input name="PhoneNo" class="input sign-in-form-input" type="number" placeholder="Phone No">
+            <ion-icon name="call-outline"></ion-icon>
+          </div>
+          <div class="username-input">
+            <input name="mailId" class="input sign-in-form-input" type="email" placeholder="Email-Id">
+            <ion-icon name="mail-outline"></ion-icon>
+          </div>
+          <div class="username-input">
+            <input name="password" class="input sign-in-form-input" type="password" placeholder="Password">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+          </div>
+          <a class="sign-in-link" href="/">Have An Account? Log-in</a>
+          <div class="remember-me">
+            <input class="remember-me" type="checkbox"> Remember Me
+          </div>
+          <div class="btn-div">
+            <button id="post-form-credentials-btn" class="sign-in-btn form-sign-in nav-bar-btn" type="submit">Sign In</button>
+          </div>
+        </form>
+    </div>
+    <header class="header">
+        <div class="nav-font" id="nav-bar-stakker">
+            <div class="padding-main primary-flex border-bottom">
+                <div class="float-50">
+                    <img class="margin-left nav-image" src="../Static/Static Images/indianRailwaysLogo.png" alt="">
+                </div>
+                <div class="primary-flex float-50 align-center justify-end">
+                    <button class="padding-btn font-rem back-transparent-border-none" onclick="showModal()">Travel With Viator</button>
+                </div>
+            </div>
+            <div class="bottom-bor">
+                <ul class="margin-left padding-main primary-flex list-no-style low-cap-font">
+                    <li class="mar-right align-center primary-flex"><ion-icon class="transfrom-half margin-right-low" name="grid-outline"></ion-icon>Top activities</li>
+                    <li class="mar-right align-center primary-flex"><ion-icon class="transfrom-half margin-right-low" name="pin-outline"></ion-icon>Top landmarks</li>
+                    <li class="mar-right align-center primary-flex"><ion-icon class="transfrom-half margin-right-low" name="globe-outline"></ion-icon>Explore the world</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="slide-show-random">
+        </div>
+        <h1 class="position-relative primary-light-text border-bottom text-center low-cap-font padding-main" id="why-book-viator">Why Book Viator?</h1>
+    </main>
+</body>
+    <script src="../Static/JS/Landing Page/effect.js"></script>
+    <script src="../Static/JS/Landing Page/modal.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

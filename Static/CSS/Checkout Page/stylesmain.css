@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+.main{
+    padding: 40px;
+    display: grid;
+    justify-content: center;
+}
+.underline{
+    text-decoration: underline;
+}
+.trainDataDiv{
+    margin: 60px;
+    cursor: pointer;
+    padding: 20px;
+    width: 1000px;
+    border: 0.8px solid #00475792;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.train-details{
+    display: flex;
+}
+.input{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding: 3px 5px;
+    border-radius: 6px;
+    border: 0.9px solid rgba(35, 34, 34, 0.651);
+    margin: 5px;
+    font-size: 16px;
+    width: 400px;
+}
+.button{
+    width: 100%;
+    margin-top: 20px;
+    font-size: large;
+    color: #00475792;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
